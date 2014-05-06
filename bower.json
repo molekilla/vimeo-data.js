@@ -1,0 +1,12 @@
+{
+  "name": "vimeo-data",
+  "version": "0.0.0",
+  "main": "dist/vimeo-data.min.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {}
+}
