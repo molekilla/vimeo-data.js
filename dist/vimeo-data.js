@@ -1,8 +1,19 @@
 (function(root, undefined) {
+	
+	// RM: Usamos Browserify o RequireJS en CommonJS mode
+	// Para tener algo reusable en NodeJS y Browser
 
-  "use strict";
+  "use strict"; // Nice touch!
 
 	//vimeoData Object
+	
+	// RM: Puedes crear un objeto mejor
+	// function VimeoDataAdapter() {
+	//  this.url = 
+	//  this.version = 
+	// }
+	// VimeoDataAdapter.prototype.getById
+	// VimeoDataAdapter.prototype.createUrl
 	var vimeoData = {};
 
 	vimeoData.video = {};
@@ -19,7 +30,7 @@
 	/* vimeo-data main */
 
 	// Check if Jquery exist
-	if( !root.jQuery ){
+	if( !root.jQuery ){ // RM: Revisa si hay una forma de agregar deps en Browserify
 		throw new Error('It dependes on jquery');
 	}
 	
